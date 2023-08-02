@@ -1,20 +1,22 @@
 # README
-Echo uses Ruby 3.0 and Rails 7.0
+Echo uses Ruby 3.0 and Rails 7.0. API follows a format suggested by the echo.md.  
+
+## Prerequisites
+`bundle install`   
+To install all gems.
 
 ## Configuring a database
 Echo uses passwordless Postgres database by default.
 To setup a database run   
-`rails db:create`   
-`rails db:migrate`   
+`rake db:create`   
+`rake db:migrate`   
 
 ## Running a server
-Run   
-`bundle install`   
 `rails s`   
-to start server with default settings
+to start server with default settings.
 
 ## Running tests
-Rspec is used as test framework   
-`bundle install`   
+Rspec is used as test framework.   
+To run a test suite  
 `bundle exec rspec`   
-To run a test suite
+
