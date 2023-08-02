@@ -12,11 +12,6 @@ module ExceptionHandler
 
   private
 
-  def command_failure(err)
-    @errors = [error(err.http_code, err.message)]
-    render 'errors/errors', status: err.http_code
-  end
-
   def bad_request(error)
     @errors = [error(:bad_request, error.message)]
     render 'errors/errors', status: :bad_request
